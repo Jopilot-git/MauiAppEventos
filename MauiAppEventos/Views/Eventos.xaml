@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.Eventos"
+             Title="Eventos" >
+    
+   
+    <VerticalStackLayout Padding="12">
+        <Label 
+            Text="Cadastro de Eventos"
+            FontSize="Medium"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Frame>
+            <VerticalStackLayout Padding="15" Spacing="10">
+                <HorizontalStackLayout Padding="10" HorizontalOptions="Start">
+                    <Grid RowDefinitions="auto,auto,auto,auto,auto,auto, auto"
+                      ColumnDefinitions="*,*,*,*,*,*">
+                
+                    <Label Text="Nome do Evento" Grid.Row="0" Grid.Column="0"/>
+                        
+
+                        <Label Text="Local do Evento" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="Data Início" Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="Data Término" Grid.Row="3" Grid.Column="0"/>
+                    <Label Text="Participantes" Grid.Row="4" Grid.Column="0"/>
+                    <Label Text="Custo do Evento" Grid.Row="6" Grid.Column="0"/>
+                        
+                    <Label Text="{Binding Nome}" Grid.Row="0" Grid.Column="3" TextColor="White"/>
+                    <Label Text="{Binding Local}" Grid.Row="1" Grid.Column="3"/>
+                    <Label Text="{Binding datainicio, StringFormat='{}{0:dd/MM/yyyy}'}" Grid.Row="2" Grid.Column="3"/>
+                    <Label Text="{Binding datatermino, StringFormat='{}{0:dd/MM/yyyy}'}" Grid.Row="3" Grid.Column="3"/>
+                    <Label Text="{Binding participantes} " Grid.Row="4" Grid.Column="3"/>
+                    <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" Grid.Row="6" Grid.Column="2"/>
+                        
+
+                </Grid>
+                </HorizontalStackLayout>
+
+                <Button Text="Voltar" HorizontalOptions="Start" BackgroundColor="Gray" FontSize="Small" Clicked="Button_Voltar"/>
+
+
+            </VerticalStackLayout>
+         </Frame>
+        
+        
+        
+        </VerticalStackLayout>
+        
+    
+</ContentPage>
