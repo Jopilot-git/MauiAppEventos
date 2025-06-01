@@ -4,7 +4,7 @@
              x:Class="MauiAppEventos.MainPage"
              Title="Cadastro de Eventos"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray400}">
+             BackgroundColor="{StaticResource Gray300}">
 
 
 
@@ -27,11 +27,11 @@
                 <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
                 
                     <Label Grid.Row="0" Grid.Column="0" Text="Data de início:" TextColor="Black"/>
-                    <DatePicker Grid.Row="1" Grid.Column="0" x:Name="dtpck_Inicio" DateSelected="dtpck_Inicio_DateSelected" Format="dd/MM/yyyy" />
+                    <DatePicker Grid.Row="1" Grid.Column="0" x:Name="dtpck_Inicio" DateSelected="dtpck_Inicio_DateSelected" Format="dd/MM/yyyy" TextColor="Black" />
                     
                                        
                     <Label Grid.Row="0" Grid.Column="1" Text="Data de Término" TextColor="Black"/>
-                    <DatePicker Grid.Row="1" Grid.Column="1" x:Name="dtpck_Termino" DateSelected="dtpck_Termino_DateSelected" Format="dd/MM/yyyy" />
+                    <DatePicker Grid.Row="1" Grid.Column="1" x:Name="dtpck_Termino" DateSelected="dtpck_Termino_DateSelected" Format="dd/MM/yyyy" TextColor="Black" />
 
 
                 </Grid>
@@ -54,7 +54,7 @@
                 <Entry  x:Name="Custo_Participante" Placeholder="Digite o Custo por participante:"/>
 
                 
-                <Button Text="Finalizar cadastro" BackgroundColor="CornflowerBlue" Clicked="Button_Cadastro" />
+                <Button Text="Finalizar cadastro" HorizontalOptions="Center" BackgroundColor="CornflowerBlue" Clicked="Button_Cadastro" />
                
                
                 

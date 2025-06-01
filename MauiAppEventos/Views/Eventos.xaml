@@ -5,12 +5,13 @@
              Title="Eventos" >
     
    
-    <VerticalStackLayout Padding="12">
+    <VerticalStackLayout Padding="12" BackgroundColor="{StaticResource Gray200}">
         <Label 
             Text="Cadastro de Eventos"
-            FontSize="Medium"
+            FontSize="Large"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            TextColor="{StaticResource Primary}"/>
 
         <Frame>
             <VerticalStackLayout Padding="15" Spacing="10">
